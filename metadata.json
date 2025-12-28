@@ -1,0 +1,7 @@
+{
+  "name": "Llanos Electric Builders - Houston Electrician",
+  "description": "High-converting lead generation page for Llanos Electric Builders, providing 24/7 electrical services in Houston, TX.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}

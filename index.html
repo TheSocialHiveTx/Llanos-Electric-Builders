@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Llanos Electric Builders | 24/7 Electrician Houston TX</title>
+    <meta name="description" content="Professional 24/7 electrical services in Houston, TX. Emergency repairs, panel upgrades, and wiring in Edgebrook. Licensed and insured.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        .scroll-mt-header { scroll-margin-top: 70px; }
+        .accordion-content { max-height: 0; overflow: hidden; transition: max-height 0.3s ease-out; }
+        .accordion-active .accordion-content { max-height: 200px; }
+        .accordion-active .chevron { transform: rotate(180deg); color: #2563eb; }
+    </style>
+</head>
+<body class="bg-white text-slate-900">
+
+    <!-- 1. Slim Sticky Mobile Call Bar -->
+    <div class="fixed bottom-0 left-0 right-0 z-50 p-2 md:hidden">
+        <a href="tel:+18325269760" class="flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-bold py-3.5 rounded-xl transition-all active:scale-95 shadow-lg shadow-blue-600/30">
+            <div class="relative">
+                <i data-lucide="phone" class="w-5 h-5 fill-current"></i>
+                <span class="absolute -top-1 -right-1 w-2.5 h-2.5 bg-red-500 border-2 border-white rounded-full animate-ping"></span>
+            </div>
+            <span class="text-base uppercase tracking-tight">Call Now: (832) 526-9760</span>
+        </a>
+    </div>
+
+    <!-- Slim Header -->
+    <header id="main-header" class="fixed top-0 left-0 right-0 z-40 transition-all duration-300 py-3">
+        <div class="container mx-auto px-4 flex items-center justify-between">
+            <div class="flex items-center gap-2 group cursor-pointer" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+                <div class="bg-blue-600 p-1.5 rounded-md shadow-md">
+                    <i data-lucide="zap" class="w-4 h-4 text-white fill-current"></i>
+                </div>
+                <span id="logo-text" class="font-black text-base tracking-tighter text-slate-900">
+                    LLANOS ELECTRIC
+                </span>
+            </div>
+
+            <nav class="hidden md:flex items-center gap-6">
+                <a href="#services" class="nav-link font-bold text-xs uppercase tracking-wide text-slate-100 hover:text-blue-500 transition-colors">Services</a>
+                <a href="#why-us" class="nav-link font-bold text-xs uppercase tracking-wide text-slate-100 hover:text-blue-500 transition-colors">Why Us</a>
+                <a href="#reviews" class="nav-link font-bold text-xs uppercase tracking-wide text-slate-100 hover:text-blue-500 transition-colors">Reviews</a>
+                <a href="tel:+18325269760" class="bg-blue-600 text-white px-4 py-2 rounded-lg font-bold text-xs hover:bg-blue-700 transition-all shadow-md">
+                    (832) 526-9760
+                </a>
+            </nav>
+
+            <div class="flex items-center gap-2 md:hidden">
+                <button id="menu-toggle" class="p-1.5 rounded-lg active:scale-90 transition-colors bg-white/20 text-slate-900">
+                    <i data-lucide="menu" id="menu-icon" class="w-5 h-5"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-menu" class="fixed inset-0 z-50 bg-white hidden flex-col p-6">
+        <div class="flex justify-between items-center mb-10">
+            <span class="font-black text-lg text-blue-600">MENU</span>
+            <button id="menu-close" class="p-2 bg-slate-100 rounded-full"><i data-lucide="x" class="w-5 h-5"></i></button>
+        </div>
+        <div class="flex flex-col gap-6">
+            <a href="#services" class="mobile-nav-link text-2xl font-black text-slate-800 border-b border-slate-100 pb-4">Services</a>
+            <a href="#why-us" class="mobile-nav-link text-2xl font-black text-slate-800 border-b border-slate-100 pb-4">Why Us</a>
+            <a href="#reviews" class="mobile-nav-link text-2xl font-black text-slate-800 border-b border-slate-100 pb-4">Reviews</a>
+            <a href="#faq" class="mobile-nav-link text-2xl font-black text-slate-800 border-b border-slate-100 pb-4">FAQ</a>
+        </div>
+        <div class="mt-auto">
+            <a href="tel:+18325269760" class="block w-full bg-blue-600 text-white text-center py-4 rounded-xl font-bold text-lg shadow-lg">
+                CALL (832) 526-9760
+            </a>
+        </div>
+    </div>
+
+    <!-- Slim Hero Section -->
+    <section class="relative min-h-[70vh] md:min-h-[85vh] flex items-center pt-20 pb-10 overflow-hidden bg-slate-900">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=2069&auto=format&fit=crop" alt="Houston Electrician" class="w-full h-full object-cover opacity-20 md:opacity-40">
+        </div>
+        <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/60 to-slate-900/20 z-1"></div>
+        
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="max-w-2xl">
+                <div class="inline-flex items-center gap-2 bg-blue-600/20 border border-blue-500/30 text-blue-400 px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest mb-4">
+                    <span class="relative flex h-2 w-2">
+                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+                    </span>
+                    24/7 Houston Dispatch
+                </div>
+                <h1 class="text-4xl md:text-6xl font-black text-white leading-tight mb-4 tracking-tighter">
+                    Fast, Expert <br/><span class="text-blue-500">Electricians</span> in Houston
+                </h1>
+                <p class="text-base md:text-lg text-slate-300 mb-6 font-medium leading-relaxed max-w-lg">
+                    Immediate, licensed emergency repairs and panel upgrades for Edgebrook and surrounding neighborhoods.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row items-center gap-4">
+                    <a href="tel:+18325269760" class="w-full sm:w-auto bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-xl text-lg shadow-xl transition-all active:scale-95 text-center">
+                        Call (832) 526-9760
+                    </a>
+                    
+                    <div class="flex items-center gap-3">
+                        <div class="flex text-yellow-400">
+                            <i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i>
+                            <i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i>
+                            <i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i>
+                            <i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i>
+                            <i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i>
+                        </div>
+                        <span class="text-white text-xs font-bold">5.0 Star Rating (56+ Reviews)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tight Trust Strip -->
+    <div class="bg-white border-b border-slate-100 py-3">
+        <div class="container mx-auto px-4 overflow-x-auto no-scrollbar">
+            <div class="flex items-center justify-start md:justify-center gap-6 whitespace-nowrap min-w-max">
+                <div class="flex items-center gap-2 text-slate-700 font-bold text-xs uppercase tracking-tight">
+                    <i data-lucide="shield" class="w-4 h-4 text-blue-600"></i> Licensed & Insured
+                </div>
+                <div class="flex items-center gap-2 text-slate-700 font-bold text-xs uppercase tracking-tight">
+                    <i data-lucide="check-circle" class="w-4 h-4 text-blue-600"></i> Upfront Pricing
+                </div>
+                <div class="flex items-center gap-2 text-slate-700 font-bold text-xs uppercase tracking-tight">
+                    <i data-lucide="clock" class="w-4 h-4 text-blue-600"></i> 24/7 Service
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slim How It Works Section -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-4 text-center">
+            <h3 class="text-2xl md:text-3xl font-black text-slate-900 mb-8 tracking-tight">3 Simple Steps to Power</h3>
+            <div class="grid md:grid-cols-3 gap-6 relative">
+                <div class="flex md:flex-col items-center gap-4 md:text-center p-4 bg-slate-50 rounded-2xl md:bg-transparent">
+                    <div class="w-12 h-12 shrink-0 bg-blue-600 text-white rounded-xl flex items-center justify-center shadow-lg font-black text-lg">1</div>
+                    <div>
+                        <h4 class="text-lg font-bold text-slate-900 md:mt-2">Call or Text</h4>
+                        <p class="text-slate-500 text-xs font-medium md:max-w-[180px] md:mx-auto leading-snug">Speak directly with a Houston electrician. Available 24/7.</p>
+                    </div>
+                </div>
+                <div class="flex md:flex-col items-center gap-4 md:text-center p-4 bg-slate-50 rounded-2xl md:bg-transparent">
+                    <div class="w-12 h-12 shrink-0 bg-blue-600 text-white rounded-xl flex items-center justify-center shadow-lg font-black text-lg">2</div>
+                    <div>
+                        <h4 class="text-lg font-bold text-slate-900 md:mt-2">Fast Dispatch</h4>
+                        <p class="text-slate-500 text-xs font-medium md:max-w-[180px] md:mx-auto leading-snug">We head to your location in Edgebrook or Greater Houston.</p>
+                    </div>
+                </div>
+                <div class="flex md:flex-col items-center gap-4 md:text-center p-4 bg-slate-50 rounded-2xl md:bg-transparent">
+                    <div class="w-12 h-12 shrink-0 bg-blue-600 text-white rounded-xl flex items-center justify-center shadow-lg font-black text-lg">3</div>
+                    <div>
+                        <h4 class="text-lg font-bold text-slate-900 md:mt-2">Expert Fix</h4>
+                        <p class="text-slate-500 text-xs font-medium md:max-w-[180px] md:mx-auto leading-snug">Job completed safely with clear, upfront pricing.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Slim Services Section -->
+    <section id="services" class="py-12 bg-slate-50 scroll-mt-header">
+        <div class="container mx-auto px-4">
+            <div class="mb-8">
+                <h2 class="text-blue-600 font-black uppercase tracking-widest text-[10px] mb-1">Our Expertise</h2>
+                <h3 class="text-2xl md:text-3xl font-black text-slate-900 tracking-tight">Professional Solutions</h3>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+                <!-- Service Card 1 -->
+                <div class="p-5 rounded-2xl border border-slate-200 bg-white hover:border-blue-500/30 transition-all shadow-sm flex gap-4 items-start">
+                    <div class="w-10 h-10 shrink-0 bg-blue-50 text-blue-600 rounded-lg flex items-center justify-center">
+                        <i data-lucide="alert-triangle" class="w-5 h-5"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-base font-black text-slate-900 mb-1">Emergency Repairs</h4>
+                        <p class="text-slate-500 text-xs font-medium leading-normal line-clamp-2">Sudden outages, sparking outlets, or electrical smells? Our 24/7 team is ready.</p>
+                    </div>
+                </div>
+                <!-- Service Card 2 -->
+                <div class="p-5 rounded-2xl border border-slate-200 bg-white hover:border-blue-500/30 transition-all shadow-sm flex gap-4 items-start">
+                    <div class="w-10 h-10 shrink-0 bg-blue-50 text-blue-600 rounded-lg flex items-center justify-center">
+                        <i data-lucide="zap" class="w-5 h-5"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-base font-black text-slate-900 mb-1">Panel Upgrades</h4>
+                        <p class="text-slate-500 text-xs font-medium leading-normal line-clamp-2">Modernize your home with a safer, higher-capacity electrical panel.</p>
+                    </div>
+                </div>
+                <!-- Service Card 3 -->
+                <div class="p-5 rounded-2xl border border-slate-200 bg-white hover:border-blue-500/30 transition-all shadow-sm flex gap-4 items-start">
+                    <div class="w-10 h-10 shrink-0 bg-blue-50 text-blue-600 rounded-lg flex items-center justify-center">
+                        <i data-lucide="hammer" class="w-5 h-5"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-base font-black text-slate-900 mb-1">Wiring & Rewiring</h4>
+                        <p class="text-slate-500 text-xs font-medium leading-normal line-clamp-2">Safe and professional full-home or targeted rewiring for safety compliance.</p>
+                    </div>
+                </div>
+                <!-- Service Card 4 -->
+                <div class="p-5 rounded-2xl border border-slate-200 bg-white hover:border-blue-500/30 transition-all shadow-sm flex gap-4 items-start">
+                    <div class="w-10 h-10 shrink-0 bg-blue-50 text-blue-600 rounded-lg flex items-center justify-center">
+                        <i data-lucide="lightbulb" class="w-5 h-5"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-base font-black text-slate-900 mb-1">Lighting Installation</h4>
+                        <p class="text-slate-500 text-xs font-medium leading-normal line-clamp-2">Enhance your space with recessed lighting or landscape lights.</p>
+                    </div>
+                </div>
+                <!-- Service Card 5 -->
+                <div class="p-5 rounded-2xl border border-slate-200 bg-white hover:border-blue-500/30 transition-all shadow-sm flex gap-4 items-start">
+                    <div class="w-10 h-10 shrink-0 bg-blue-50 text-blue-600 rounded-lg flex items-center justify-center">
+                        <i data-lucide="wrench" class="w-5 h-5"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-base font-black text-slate-900 mb-1">Outlet Repair</h4>
+                        <p class="text-slate-500 text-xs font-medium leading-normal line-clamp-2">Troubleshooting dead outlets and faulty switches throughout your property.</p>
+                    </div>
+                </div>
+                <!-- Service Card 6 -->
+                <div class="p-5 rounded-2xl border border-slate-200 bg-white hover:border-blue-500/30 transition-all shadow-sm flex gap-4 items-start">
+                    <div class="w-10 h-10 shrink-0 bg-blue-50 text-blue-600 rounded-lg flex items-center justify-center">
+                        <i data-lucide="shield-check" class="w-5 h-5"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-base font-black text-slate-900 mb-1">Inspections</h4>
+                        <p class="text-slate-500 text-xs font-medium leading-normal line-clamp-2">Complete safety audits for peace of mind in the Houston area.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Compact Emergency Section -->
+    <section class="py-8 bg-red-600 text-white">
+        <div class="container mx-auto px-4 text-center flex flex-col items-center">
+            <i data-lucide="alert-triangle" class="w-8 h-8 mb-2"></i>
+            <h2 class="text-xl font-black mb-2 tracking-tight">Need Immediate Help?</h2>
+            <p class="text-red-100 text-sm font-medium mb-6">Our emergency crew is active in Houston now.</p>
+            <a href="tel:+18325269760" class="bg-white text-red-600 px-8 py-3 rounded-xl font-black text-lg shadow-lg active:scale-95 transition-all">
+                Call (832) 526-9760
+            </a>
+        </div>
+    </section>
+
+    <!-- Slim Why Choose Us -->
+    <section id="why-us" class="py-12 bg-slate-900 text-white">
+        <div class="container mx-auto px-4">
+            <div class="grid lg:grid-cols-2 gap-10 items-center">
+                <div>
+                    <h2 class="text-2xl md:text-4xl font-black mb-6 tracking-tight">Why <span class="text-blue-500">Llanos Electric</span>?</h2>
+                    <div class="space-y-4">
+                        <div class="flex gap-4 p-3 rounded-xl hover:bg-white/5 transition-colors">
+                            <i data-lucide="map-pin" class="w-5 h-5 text-blue-500 shrink-0"></i>
+                            <div>
+                                <h4 class="text-base font-black">Edgebrook Local</h4>
+                                <p class="text-slate-400 text-xs font-medium">Fast response to our immediate community.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4 p-3 rounded-xl hover:bg-white/5 transition-colors">
+                            <i data-lucide="clock" class="w-5 h-5 text-blue-500 shrink-0"></i>
+                            <div>
+                                <h4 class="text-base font-black">24/7 Availability</h4>
+                                <p class="text-slate-400 text-xs font-medium">No call goes unanswered, day or night.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4 p-3 rounded-xl hover:bg-white/5 transition-colors">
+                            <i data-lucide="shield" class="w-5 h-5 text-blue-500 shrink-0"></i>
+                            <div>
+                                <h4 class="text-base font-black">Upfront Pricing</h4>
+                                <p class="text-slate-400 text-xs font-medium">Honest estimates before the work starts.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative hidden md:block">
+                    <div class="aspect-video rounded-2xl overflow-hidden shadow-2xl">
+                        <img src="https://images.unsplash.com/photo-1590674867551-11c3a2e92c41?q=80&w=2070&auto=format&fit=crop" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Compact Reviews -->
+    <section id="reviews" class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-xl font-black text-slate-900 mb-6 tracking-tight text-center">Local Feedback</h2>
+            <div class="flex overflow-x-auto gap-4 pb-4 no-scrollbar">
+                <!-- Review Card 1 -->
+                <div class="min-w-[75vw] md:min-w-0 md:flex-1 p-5 rounded-2xl bg-slate-50 border border-slate-100 flex flex-col">
+                    <div class="flex text-yellow-400 mb-3">
+                        <i data-lucide="star" class="w-3 h-3 fill-current"></i>
+                        <i data-lucide="star" class="w-3 h-3 fill-current"></i>
+                        <i data-lucide="star" class="w-3 h-3 fill-current"></i>
+                        <i data-lucide="star" class="w-3 h-3 fill-current"></i>
+                        <i data-lucide="star" class="w-3 h-3 fill-current"></i>
+                    </div>
+                    <p class="text-slate-700 italic text-sm mb-4 flex-grow font-medium leading-snug">"Showed up at 2 AM when my breaker kept tripping. Very professional and fixed the issue fast."</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-8 h-8 bg-blue-600 text-white rounded-lg flex items-center justify-center font-black text-sm">R</div>
+                        <div>
+                            <div class="font-black text-slate-900 text-xs">Roberto M.</div>
+                            <div class="text-slate-400 text-[10px] font-bold uppercase">2 months ago</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Review Card 2 -->
+                <div class="min-w-[75vw] md:min-w-0 md:flex-1 p-5 rounded-2xl bg-slate-50 border border-slate-100 flex flex-col">
+                    <div class="flex text-yellow-400 mb-3">
+                        <i data-lucide="star" class="w-3 h-3 fill-current"></i>
+                        <i data-lucide="star" class="w-3 h-3 fill-current"></i>
+                        <i data-lucide="star" class="w-3 h-3 fill-current"></i>
+                        <i data-lucide="star" class="w-3 h-3 fill-current"></i>
+                        <i data-lucide="star" class="w-3 h-3 fill-current"></i>
+                    </div>
+                    <p class="text-slate-700 italic text-sm mb-4 flex-grow font-medium leading-snug">"Installed all new recessed lighting in our living room. It looks incredible and the price was fair."</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-8 h-8 bg-blue-600 text-white rounded-lg flex items-center justify-center font-black text-sm">S</div>
+                        <div>
+                            <div class="font-black text-slate-900 text-xs">Sarah G.</div>
+                            <div class="text-slate-400 text-[10px] font-bold uppercase">1 month ago</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Review Card 3 -->
+                <div class="min-w-[75vw] md:min-w-0 md:flex-1 p-5 rounded-2xl bg-slate-50 border border-slate-100 flex flex-col">
+                    <div class="flex text-yellow-400 mb-3">
+                        <i data-lucide="star" class="w-3 h-3 fill-current"></i>
+                        <i data-lucide="star" class="w-3 h-3 fill-current"></i>
+                        <i data-lucide="star" class="w-3 h-3 fill-current"></i>
+                        <i data-lucide="star" class="w-3 h-3 fill-current"></i>
+                        <i data-lucide="star" class="w-3 h-3 fill-current"></i>
+                    </div>
+                    <p class="text-slate-700 italic text-sm mb-4 flex-grow font-medium leading-snug">"Friendly, fast, and local. They are my go-to for any electrical work in Edgebrook now."</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-8 h-8 bg-blue-600 text-white rounded-lg flex items-center justify-center font-black text-sm">D</div>
+                        <div>
+                            <div class="font-black text-slate-900 text-xs">David W.</div>
+                            <div class="text-slate-400 text-[10px] font-bold uppercase">3 weeks ago</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Slim FAQ -->
+    <section id="faq" class="py-12 bg-slate-50">
+        <div class="container mx-auto px-4 max-w-2xl">
+            <h2 class="text-xl font-black text-slate-900 mb-6 text-center">Questions?</h2>
+            <div class="space-y-2">
+                <!-- FAQ Item 1 -->
+                <div class="accordion-item bg-white rounded-xl shadow-sm border border-slate-200">
+                    <button class="accordion-trigger w-full p-4 text-left flex items-center justify-between font-bold text-slate-800 text-sm">
+                        <span class="pr-4">Do you offer emergency electrical services?</span>
+                        <i data-lucide="chevron-down" class="chevron w-4 h-4 text-slate-400 transition-transform"></i>
+                    </button>
+                    <div class="accordion-content px-4 text-slate-600 font-medium text-xs leading-relaxed border-t border-slate-50">
+                        <div class="pt-3 pb-4">Yes! We are open 24 hours a day, 7 days a week for all emergency electrical needs in Houston and surrounding areas.</div>
+                    </div>
+                </div>
+                <!-- FAQ Item 2 -->
+                <div class="accordion-item bg-white rounded-xl shadow-sm border border-slate-200">
+                    <button class="accordion-trigger w-full p-4 text-left flex items-center justify-between font-bold text-slate-800 text-sm">
+                        <span class="pr-4">Are you licensed and insured?</span>
+                        <i data-lucide="chevron-down" class="chevron w-4 h-4 text-slate-400 transition-transform"></i>
+                    </button>
+                    <div class="accordion-content px-4 text-slate-600 font-medium text-xs leading-relaxed border-t border-slate-50">
+                        <div class="pt-3 pb-4">Absolutely. Llanos Electric Builders is fully licensed and insured, ensuring every job meets strict safety standards.</div>
+                    </div>
+                </div>
+                <!-- FAQ Item 3 -->
+                <div class="accordion-item bg-white rounded-xl shadow-sm border border-slate-200">
+                    <button class="accordion-trigger w-full p-4 text-left flex items-center justify-between font-bold text-slate-800 text-sm">
+                        <span class="pr-4">How fast can an electrician arrive?</span>
+                        <i data-lucide="chevron-down" class="chevron w-4 h-4 text-slate-400 transition-transform"></i>
+                    </button>
+                    <div class="accordion-content px-4 text-slate-600 font-medium text-xs leading-relaxed border-t border-slate-50">
+                        <div class="pt-3 pb-4">For emergency calls, we prioritize rapid dispatch. Depending on your location in Houston, we typically arrive within the hour.</div>
+                    </div>
+                </div>
+                <!-- FAQ Item 4 -->
+                <div class="accordion-item bg-white rounded-xl shadow-sm border border-slate-200">
+                    <button class="accordion-trigger w-full p-4 text-left flex items-center justify-between font-bold text-slate-800 text-sm">
+                        <span class="pr-4">What areas do you service around Houston?</span>
+                        <i data-lucide="chevron-down" class="chevron w-4 h-4 text-slate-400 transition-transform"></i>
+                    </button>
+                    <div class="accordion-content px-4 text-slate-600 font-medium text-xs leading-relaxed border-t border-slate-50">
+                        <div class="pt-3 pb-4">We primarily serve the Edgebrook area, but provide coverage across the greater Houston, TX metro region.</div>
+                    </div>
+                </div>
+                <!-- FAQ Item 5 -->
+                <div class="accordion-item bg-white rounded-xl shadow-sm border border-slate-200">
+                    <button class="accordion-trigger w-full p-4 text-left flex items-center justify-between font-bold text-slate-800 text-sm">
+                        <span class="pr-4">Do you provide free estimates?</span>
+                        <i data-lucide="chevron-down" class="chevron w-4 h-4 text-slate-400 transition-transform"></i>
+                    </button>
+                    <div class="accordion-content px-4 text-slate-600 font-medium text-xs leading-relaxed border-t border-slate-50">
+                        <div class="pt-3 pb-4">Yes, we offer transparent, upfront pricing and free estimates for most standard electrical projects.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Slim Footer -->
+    <footer class="bg-slate-900 text-white pt-12 pb-24 md:pb-12 border-t border-slate-800">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8 text-center md:text-left">
+                <div>
+                    <h4 class="font-black text-lg mb-4 tracking-tighter uppercase">LLANOS ELECTRIC</h4>
+                    <p class="text-slate-400 text-xs font-medium leading-relaxed max-w-xs mx-auto md:mx-0">
+                        Houston's trusted local electricians. Safety, speed, and reliable 24/7 service.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-black text-blue-500 uppercase text-[10px] tracking-widest mb-3">Service Hours</h4>
+                    <p class="text-white font-bold text-sm mb-1">Open 24 Hours</p>
+                    <p class="text-slate-500 text-[10px] font-medium">Monday — Sunday</p>
+                </div>
+                <div>
+                    <h4 class="font-black text-blue-500 uppercase text-[10px] tracking-widest mb-3">Location</h4>
+                    <p class="text-white font-bold text-sm mb-1">Houston, TX</p>
+                    <p class="text-slate-500 text-[10px] font-medium">907 Creager St, Houston, TX 77034</p>
+                </div>
+                <div>
+                    <a href="tel:+18325269760" class="inline-block bg-blue-600 text-white font-bold px-6 py-3 rounded-xl text-sm shadow-lg hover:bg-blue-700 active:scale-95 transition-all">
+                        (832) 526-9760
+                    </a>
+                </div>
+            </div>
+            
+            <div class="pt-6 border-t border-slate-800 text-center text-slate-600 text-[9px] font-bold uppercase tracking-widest">
+                &copy; 2024 Llanos Electric Builders | Licensed | Houston TX
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        // Header Scroll Effect
+        const header = document.getElementById('main-header');
+        const logoText = document.getElementById('logo-text');
+        const navLinks = document.querySelectorAll('.nav-link');
+        const menuToggle = document.getElementById('menu-toggle');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 20) {
+                header.classList.add('bg-white', 'shadow-sm');
+                header.classList.remove('bg-transparent');
+                logoText.classList.add('text-slate-900');
+                navLinks.forEach(link => {
+                    link.classList.remove('text-slate-100');
+                    link.classList.add('text-slate-600');
+                });
+                menuToggle.classList.add('bg-slate-100', 'text-slate-900');
+                menuToggle.classList.remove('bg-white/20', 'text-slate-900');
+            } else {
+                header.classList.remove('bg-white', 'shadow-sm');
+                header.classList.add('bg-transparent');
+                logoText.classList.remove('text-slate-900');
+                logoText.classList.add('text-slate-900', 'md:text-white');
+                navLinks.forEach(link => {
+                    link.classList.add('text-slate-100');
+                    link.classList.remove('text-slate-600');
+                });
+                menuToggle.classList.remove('bg-slate-100', 'text-slate-900');
+                menuToggle.classList.add('bg-white/20', 'text-slate-900');
+            }
+        });
+
+        // Mobile Menu Toggle
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuOpenBtn = document.getElementById('menu-toggle');
+        const menuCloseBtn = document.getElementById('menu-close');
+        const mobileLinks = document.querySelectorAll('.mobile-nav-link');
+
+        function toggleMenu() {
+            mobileMenu.classList.toggle('hidden');
+            mobileMenu.classList.toggle('flex');
+            document.body.classList.toggle('overflow-hidden');
+        }
+
+        menuOpenBtn.addEventListener('click', toggleMenu);
+        menuCloseBtn.addEventListener('click', toggleMenu);
+        mobileLinks.forEach(link => link.addEventListener('click', toggleMenu));
+
+        // FAQ Accordion
+        const accordionItems = document.querySelectorAll('.accordion-item');
+
+        accordionItems.forEach(item => {
+            const trigger = item.querySelector('.accordion-trigger');
+            trigger.addEventListener('click', () => {
+                const isOpen = item.classList.contains('accordion-active');
+                
+                // Close all other items
+                accordionItems.forEach(otherItem => {
+                    otherItem.classList.remove('accordion-active');
+                });
+
+                // Toggle current item
+                if (!isOpen) {
+                    item.classList.add('accordion-active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
